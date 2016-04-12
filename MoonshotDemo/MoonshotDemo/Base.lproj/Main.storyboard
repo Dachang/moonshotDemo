@@ -39,6 +39,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15P-LN-cdF">
                                 <rect key="frame" x="50" y="148" width="37" height="30"/>
                                 <state key="normal" title="6534"/>
+                                <connections>
+                                    <segue destination="f6f-aj-AWT" kind="show" id="VlO-gC-2CB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJp-rZ-jKT">
                                 <rect key="frame" x="113" y="275" width="126" height="30"/>
@@ -57,6 +60,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ts-hj-zC1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="130" y="374"/>
+        </scene>
+        <!--6534-->
+        <scene sceneID="gAc-Y1-uwT">
+            <objects>
+                <viewController title="6534" id="f6f-aj-AWT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mCY-xX-9OE"/>
+                        <viewControllerLayoutGuide type="bottom" id="azB-aJ-B71"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mtg-xS-ENC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Template_App_ModalSheet_42mm" translatesAutoresizingMaskIntoConstraints="NO" id="WHx-bB-2Wb">
+                                <rect key="frame" x="384" y="237" width="256" height="295"/>
+                            </imageView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8bB-RG-zO9">
+                                <rect key="frame" x="434" y="286" width="156" height="195"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_watch" translatesAutoresizingMaskIntoConstraints="NO" id="pQp-cd-VuF" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="156" height="195"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="modal_watch" translatesAutoresizingMaskIntoConstraints="NO" id="Ge6-39-XNo" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="23" width="156" height="172"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="3.2999999999999998"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideUp"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easeOutQuad"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LHI-mr-gBe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1278" y="-522"/>
         </scene>
         <!--6576-->
         <scene sceneID="tne-QT-ifu">
@@ -255,12 +310,15 @@
     </scenes>
     <resources>
         <image name="BG_Tour" width="886" height="407"/>
+        <image name="Template_App_ModalSheet_42mm" width="256" height="295"/>
+        <image name="bg_watch" width="156" height="195"/>
         <image name="card1_Tour" width="203" height="256"/>
         <image name="card2_Tour" width="203" height="256"/>
         <image name="card3_Tour" width="203" height="256"/>
         <image name="card4_Tour" width="203" height="256"/>
         <image name="indicatorNavi" width="93" height="66"/>
         <image name="map_Navi" width="886" height="407"/>
+        <image name="modal_watch" width="156" height="172"/>
         <image name="timeLeft" width="225" height="88"/>
         <image name="title_Tour" width="197" height="30"/>
         <image name="toolBar_Navi" width="886" height="101"/>
