@@ -18,10 +18,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4W-12-2P5">
-                                <rect key="frame" x="56" y="113" width="36" height="30"/>
+                                <rect key="frame" x="50" y="275" width="36" height="30"/>
                                 <state key="normal" title="6576"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="ydk-Ff-nGl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Infotainment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUA-hW-qWc">
+                                <rect key="frame" x="50" y="239" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Watch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLd-lP-gf6">
+                                <rect key="frame" x="50" y="112" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15P-LN-cdF">
+                                <rect key="frame" x="50" y="148" width="37" height="30"/>
+                                <state key="normal" title="6534"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJp-rZ-jKT">
+                                <rect key="frame" x="113" y="275" width="126" height="30"/>
+                                <state key="normal" title="6677(before click)"/>
+                                <connections>
+                                    <segue destination="rCj-iq-L3E" kind="show" id="v4Y-zS-DfW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -48,10 +71,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="toolBar_Navi" translatesAutoresizingMaskIntoConstraints="NO" id="J4p-6J-2ms">
-                                <rect key="frame" x="69" y="537" width="886" height="101"/>
+                                <rect key="frame" x="69" y="569" width="886" height="101"/>
                             </imageView>
                             <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L5w-om-apA">
-                                <rect key="frame" x="69" y="130" width="886" height="407"/>
+                                <rect key="frame" x="69" y="162" width="886" height="407"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="map_Navi" translatesAutoresizingMaskIntoConstraints="NO" id="qnV-af-5V2" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="886" height="407"/>
@@ -121,6 +144,90 @@
             </objects>
             <point key="canvasLocation" x="1278" y="374"/>
         </scene>
+        <!--6677(before click)-->
+        <scene sceneID="Flm-8z-Tmo">
+            <objects>
+                <viewController title="6677(before click)" id="rCj-iq-L3E" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fJo-TW-8L0"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dgj-8f-Vg5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uX9-6S-bc8">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V9C-7j-LXd">
+                                <rect key="frame" x="69" y="162" width="886" height="407"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG_Tour" translatesAutoresizingMaskIntoConstraints="NO" id="l9z-li-oKM">
+                                        <rect key="frame" x="0.0" y="0.0" width="886" height="407"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title_Tour" translatesAutoresizingMaskIntoConstraints="NO" id="3YM-hZ-udU" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="345" y="59" width="197" height="30"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomIn"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card1_Tour" translatesAutoresizingMaskIntoConstraints="NO" id="A4O-xF-vbH" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="170" width="203.5" height="256"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="3.1000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeInUp"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card3_Tour" translatesAutoresizingMaskIntoConstraints="NO" id="Hpe-6c-t9f" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="447" y="170" width="203.5" height="256"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeInUp"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="3.2999999999999998"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card4_Tour" translatesAutoresizingMaskIntoConstraints="NO" id="UxY-kr-UtZ" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="658" y="170" width="203.5" height="256"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeInUp"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="3.3999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card2_Tour" translatesAutoresizingMaskIntoConstraints="NO" id="Uy1-WB-tZa" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="235" y="170" width="203.5" height="256"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeInUp"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="3.2000000000000002"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="toolBar_Tour" translatesAutoresizingMaskIntoConstraints="NO" id="Xti-be-zbW">
+                                <rect key="frame" x="69" y="569" width="886" height="101"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u79-ye-EvU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1278" y="1323"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="mBT-Jb-BcA">
             <objects>
@@ -147,10 +254,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BG_Tour" width="886" height="407"/>
+        <image name="card1_Tour" width="203" height="256"/>
+        <image name="card2_Tour" width="203" height="256"/>
+        <image name="card3_Tour" width="203" height="256"/>
+        <image name="card4_Tour" width="203" height="256"/>
         <image name="indicatorNavi" width="93" height="66"/>
         <image name="map_Navi" width="886" height="407"/>
         <image name="timeLeft" width="225" height="88"/>
+        <image name="title_Tour" width="197" height="30"/>
         <image name="toolBar_Navi" width="886" height="101"/>
+        <image name="toolBar_Tour" width="886" height="101"/>
         <image name="topBanner_Navi" width="790" height="150"/>
     </resources>
 </document>
