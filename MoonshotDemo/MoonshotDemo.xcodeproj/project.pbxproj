@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1311667A1CBE5D16006FF495 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131166791CBE5D16006FF495 /* DestinationViewController.swift */; };
 		134B02FE1CBCE22B00DBA046 /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134B02DE1CBCE22B00DBA046 /* AsyncButton.swift */; };
 		134B02FF1CBCE22B00DBA046 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134B02DF1CBCE22B00DBA046 /* AsyncImageView.swift */; };
 		134B03001CBCE22B00DBA046 /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134B02E01CBCE22B00DBA046 /* AutoTextView.swift */; };
@@ -56,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		131166791CBE5D16006FF495 /* DestinationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
 		134B02DE1CBCE22B00DBA046 /* AsyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
 		134B02DF1CBCE22B00DBA046 /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		134B02E01CBCE22B00DBA046 /* AutoTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoTextView.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 		136C1DFB1CBCD75A006E5546 /* MoonshotDemo */ = {
 			isa = PBXGroup;
 			children = (
+				131166791CBE5D16006FF495 /* DestinationViewController.swift */,
 				134B02DD1CBCE22B00DBA046 /* Spring */,
 				136C1DFC1CBCD75A006E5546 /* AppDelegate.swift */,
 				136C1DFE1CBCD75A006E5546 /* ViewController.swift */,
@@ -309,6 +312,7 @@
 				136C1DFD1CBCD75A006E5546 /* AppDelegate.swift in Sources */,
 				134B031B1CBCE22B00DBA046 /* UnwindSegue.swift in Sources */,
 				134B030D1CBCE22B00DBA046 /* LoadingView.swift in Sources */,
+				1311667A1CBE5D16006FF495 /* DestinationViewController.swift in Sources */,
 				134B03161CBCE22B00DBA046 /* SpringTextField.swift in Sources */,
 				134B03111CBCE22B00DBA046 /* Spring.swift in Sources */,
 				134B03081CBCE22B00DBA046 /* DesignableView.swift in Sources */,
@@ -460,6 +464,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MoonshotDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.OceanDev.MoonshotDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -471,6 +476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MoonshotDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.OceanDev.MoonshotDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
