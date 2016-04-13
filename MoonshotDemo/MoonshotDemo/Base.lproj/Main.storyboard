@@ -492,8 +492,25 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeOut"/>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="adbg_ad" translatesAutoresizingMaskIntoConstraints="NO" id="26g-fV-KGJ">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="adbg_ad" translatesAutoresizingMaskIntoConstraints="NO" id="26g-fV-KGJ" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="886" height="407"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="3.2000000000000002"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dressBanner_ad" translatesAutoresizingMaskIntoConstraints="NO" id="B1N-Kj-zx6" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="71" y="51" width="744" height="331"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="3.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeInDown"/>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -508,6 +525,26 @@
             </objects>
             <point key="canvasLocation" x="1278" y="3179"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="czu-iw-HJU">
+            <objects>
+                <viewController id="RbJ-Cj-sLh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qxS-cE-Syy"/>
+                        <viewControllerLayoutGuide type="bottom" id="5ha-k8-IRL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1d8-wL-6Lc">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aEs-N1-Hwg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1278" y="4064"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BG_Tour" width="886" height="407"/>
@@ -519,6 +556,7 @@
         <image name="card2_Tour" width="203" height="256"/>
         <image name="card3_Tour" width="203" height="256"/>
         <image name="card4_Tour" width="203" height="256"/>
+        <image name="dressBanner_ad" width="744" height="331"/>
         <image name="fourBanner_Tour" width="425" height="90"/>
         <image name="homeContent_Ad" width="886" height="407"/>
         <image name="indicatorNavi" width="93" height="66"/>
