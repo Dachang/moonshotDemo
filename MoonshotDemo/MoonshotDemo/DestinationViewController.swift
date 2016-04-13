@@ -11,6 +11,7 @@ import UIKit
 class DestinationViewController: UIViewController {
 
     @IBOutlet weak var pinMarkBaseView: SpringImageView!
+    @IBOutlet weak var mapBgView: SpringImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

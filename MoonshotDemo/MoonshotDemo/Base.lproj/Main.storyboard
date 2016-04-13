@@ -641,6 +641,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
+                        <outlet property="mapBgView" destination="flu-Oq-6XV" id="qhd-gH-gq2"/>
                         <outlet property="pinMarkBaseView" destination="LW5-ob-YjH" id="2ww-lN-cMG"/>
                     </connections>
                 </viewController>
