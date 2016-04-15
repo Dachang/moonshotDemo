@@ -44,6 +44,7 @@
 		136C1E041CBCD75A006E5546 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 136C1E031CBCD75A006E5546 /* Assets.xcassets */; };
 		136C1E071CBCD75A006E5546 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 136C1E051CBCD75A006E5546 /* LaunchScreen.storyboard */; };
 		136C1E121CBCD75B006E5546 /* MoonshotDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136C1E111CBCD75B006E5546 /* MoonshotDemoTests.swift */; };
+		13FA2FF31CBE9027004EAA95 /* HeadToDestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FA2FF21CBE9027004EAA95 /* HeadToDestinationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		136C1E0D1CBCD75B006E5546 /* MoonshotDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoonshotDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		136C1E111CBCD75B006E5546 /* MoonshotDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonshotDemoTests.swift; sourceTree = "<group>"; };
 		136C1E131CBCD75B006E5546 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13FA2FF21CBE9027004EAA95 /* HeadToDestinationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadToDestinationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 		136C1DFB1CBCD75A006E5546 /* MoonshotDemo */ = {
 			isa = PBXGroup;
 			children = (
+				13FA2FF21CBE9027004EAA95 /* HeadToDestinationViewController.swift */,
 				131166791CBE5D16006FF495 /* DestinationViewController.swift */,
 				134B02DD1CBCE22B00DBA046 /* Spring */,
 				136C1DFC1CBCD75A006E5546 /* AppDelegate.swift */,
@@ -326,6 +329,7 @@
 				134B03191CBCE22B00DBA046 /* TransitionManager.swift in Sources */,
 				134B03151CBCE22B00DBA046 /* SpringLabel.swift in Sources */,
 				134B03001CBCE22B00DBA046 /* AutoTextView.swift in Sources */,
+				13FA2FF31CBE9027004EAA95 /* HeadToDestinationViewController.swift in Sources */,
 				134B03091CBCE22B00DBA046 /* DRPageScrollView.m in Sources */,
 				134B03071CBCE22B00DBA046 /* DesignableTextView.swift in Sources */,
 				134B03181CBCE22B00DBA046 /* SpringView.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  DestinationViewController.swift
+//  HeadToDestinationViewController.swift
 //  MoonshotDemo
 //
 //  Created by 大畅 on 16/4/13.
@@ -8,22 +8,16 @@
 
 import UIKit
 
-class DestinationViewController: UIViewController {
+class HeadToDestinationViewController: UIViewController {
 
-    @IBOutlet weak var pinMarkBaseView: SpringImageView!
     @IBOutlet weak var mapBgView: SpringImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        pinMarkBaseView.delay = 3.5
-        pinMarkBaseView.animation = "fadeIn"
-        pinMarkBaseView.animateNext(){
-            self.pinMarkBaseView.delay = 3.6
-            self.pinMarkBaseView.animation = "flash"
-            self.pinMarkBaseView.repeatCount = 100
-            self.pinMarkBaseView.animate()
-        }
-        // Do any additional setup after loading the view.
+        
+        UIView.animateWithDuration(0.3, delay: 3.5, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+            self.mapBgView.transform = CGAffineTransformMakeScale(1.2, 1.2)
+            }, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E64a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Cdj-y7-5eO">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
@@ -69,6 +68,13 @@
                                 <state key="normal" title="6822"/>
                                 <connections>
                                     <segue destination="RbJ-Cj-sLh" kind="show" id="Rb5-i6-m8c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFJ-wg-GBD">
+                                <rect key="frame" x="49" y="347" width="38" height="30"/>
+                                <state key="normal" title="6684"/>
+                                <connections>
+                                    <segue destination="jbY-Jg-CyY" kind="show" id="vkZ-vm-hkv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -533,6 +539,191 @@
             </objects>
             <point key="canvasLocation" x="1278" y="3179"/>
         </scene>
+        <!--6684-->
+        <scene sceneID="haC-HX-zKP">
+            <objects>
+                <viewController title="6684" id="jbY-Jg-CyY" customClass="HeadToDestinationViewController" customModule="MoonshotDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1fA-2Y-qKu"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z5S-ha-787"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rkB-Af-Blr">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="toolBar_destination" translatesAutoresizingMaskIntoConstraints="NO" id="bxY-dx-lHU">
+                                <rect key="frame" x="69" y="569" width="886" height="101"/>
+                            </imageView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ycC-3W-bPF">
+                                <rect key="frame" x="69" y="162" width="886" height="407"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="map_destination" translatesAutoresizingMaskIntoConstraints="NO" id="22Y-Gd-YtW" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="886" height="407"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="map_destination" translatesAutoresizingMaskIntoConstraints="NO" id="RbD-0d-2zv" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="-88" y="-40" width="1063" height="488"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easeOut"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="topBanner_destination" translatesAutoresizingMaskIntoConstraints="NO" id="fXB-O7-sMU" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="-425" y="177" width="425" height="160"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="x">
+                                                <real key="value" value="400"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="secondBanner_destination" translatesAutoresizingMaskIntoConstraints="NO" id="dng-nV-um0" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="-425" y="314" width="425" height="90"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="x">
+                                                <real key="value" value="400"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="locationLabel_destination" translatesAutoresizingMaskIntoConstraints="NO" id="BWe-sm-d4b" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="548" y="279" width="175.5" height="24"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeOut"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="locationLabel_destination" translatesAutoresizingMaskIntoConstraints="NO" id="JnM-EC-40t" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="591" y="316" width="175.5" height="24"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinMarkBase_destination" translatesAutoresizingMaskIntoConstraints="NO" id="Peq-g2-6ve" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="582" y="205" width="106.5" height="67.5"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeOut"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinMarkFront_destination" translatesAutoresizingMaskIntoConstraints="NO" id="EOs-rC-NKw" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="591" y="200.5" width="88" height="65.5"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeOut"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="desInfo_destination" translatesAutoresizingMaskIntoConstraints="NO" id="yzQ-la-dTm" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="484" y="-210" width="303" height="205"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="y">
+                                                <real key="value" value="229"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="topBanner_Navi_destination" translatesAutoresizingMaskIntoConstraints="NO" id="lCA-4W-Xua" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="48" y="0.0" width="790" height="150"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeInDown"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="3.6000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="timeLeft_destination" translatesAutoresizingMaskIntoConstraints="NO" id="1Le-ah-IFh" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="316" width="225" height="88"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="3.6000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeInRight"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinMarkLarge_destination" translatesAutoresizingMaskIntoConstraints="NO" id="O9m-EV-HcP" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="572" y="169" width="215" height="138.5"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomIn"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="3.6000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinMarkMidLarge_destination" translatesAutoresizingMaskIntoConstraints="NO" id="UuK-2l-vgr" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="611" y="199" width="136" height="80"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomIn"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="3.7000000000000002"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinLarge_destination" translatesAutoresizingMaskIntoConstraints="NO" id="TkR-Xg-qnK" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="656" y="203" width="46" height="60.5"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="3.7000000000000002"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lines_destination" translatesAutoresizingMaskIntoConstraints="NO" id="1Y9-Nd-C7f" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="356" y="251" width="165.5" height="179.5"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="4.2000000000000002"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="1Y9-Nd-C7f"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="mapBgView" destination="RbD-0d-2zv" id="nhn-uq-Mh0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MJ4-U8-cak" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3002" y="-522"/>
+        </scene>
         <!--6822-->
         <scene sceneID="czu-iw-HJU">
             <objects>
@@ -665,6 +856,7 @@
         <image name="fourBanner_Tour" width="425" height="90"/>
         <image name="homeContent_Ad" width="886" height="407"/>
         <image name="indicatorNavi" width="93" height="66"/>
+        <image name="lines_destination" width="165" height="179"/>
         <image name="locationLabel_destination" width="175" height="24"/>
         <image name="mapPins_tour" width="272" height="313"/>
         <image name="map_Navi" width="886" height="407"/>
@@ -672,18 +864,23 @@
         <image name="map_tour" width="886" height="407"/>
         <image name="mask_tour" width="392" height="407"/>
         <image name="modal_watch" width="156" height="172"/>
+        <image name="pinLarge_destination" width="46" height="60"/>
         <image name="pinMarkBase_destination" width="106" height="67"/>
         <image name="pinMarkFront_destination" width="88" height="65"/>
+        <image name="pinMarkLarge_destination" width="215" height="138"/>
+        <image name="pinMarkMidLarge_destination" width="136" height="80"/>
         <image name="secondBanner_destination" width="425" height="90"/>
         <image name="secondBanner_tour" width="425" height="90"/>
         <image name="thirdBanner_tour" width="425" height="90"/>
         <image name="timeLeft" width="225" height="88"/>
+        <image name="timeLeft_destination" width="225" height="88"/>
         <image name="title_Tour" width="197" height="30"/>
         <image name="toolBar_Ad" width="886" height="101"/>
         <image name="toolBar_Navi" width="886" height="101"/>
         <image name="toolBar_Tour" width="886" height="101"/>
         <image name="toolBar_destination" width="886" height="101"/>
         <image name="topBanner_Navi" width="790" height="150"/>
+        <image name="topBanner_Navi_destination" width="790" height="150"/>
         <image name="topBanner_destination" width="425" height="160"/>
         <image name="topBanner_tour" width="425" height="160"/>
     </resources>
