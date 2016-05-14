@@ -133,6 +133,13 @@
                                     <segue destination="CFl-xK-coO" kind="show" id="rbF-3y-UeE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVS-9i-OsK">
+                                <rect key="frame" x="410" y="420" width="72" height="30"/>
+                                <state key="normal" title="6667(buy)"/>
+                                <connections>
+                                    <segue destination="vIW-JL-677" kind="show" id="k9v-wO-WnM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1432,7 +1439,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qu9-WY-Uqw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1028" y="1315"/>
+            <point key="canvasLocation" x="-1028" y="2198"/>
         </scene>
         <!--8715-->
         <scene sceneID="nXr-Nh-2xm">
@@ -1558,6 +1565,73 @@
             </objects>
             <point key="canvasLocation" x="-1028" y="-522"/>
         </scene>
+        <!--6667(Buy)-->
+        <scene sceneID="0bc-AY-RcR">
+            <objects>
+                <viewController title="6667(Buy)" id="vIW-JL-677" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ajx-hV-GS7"/>
+                        <viewControllerLayoutGuide type="bottom" id="rIb-FW-Y9H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pdF-6x-f3g">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="toolBar_Ad" translatesAutoresizingMaskIntoConstraints="NO" id="YSZ-FX-08W">
+                                <rect key="frame" x="55" y="569" width="886" height="101"/>
+                            </imageView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Ka-HM-N2o">
+                                <rect key="frame" x="55" y="162" width="886" height="407"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="adbg_ad" translatesAutoresizingMaskIntoConstraints="NO" id="ih4-6j-Nlf" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="886" height="407"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dressBanner_ad_BIG" translatesAutoresizingMaskIntoConstraints="NO" id="74Y-zp-S3Z" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="1" y="20" width="883" height="393"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                                <real key="value" value="0.10000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="darkenLayer" translatesAutoresizingMaskIntoConstraints="NO" id="Qoo-6O-hdm" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="886" height="407"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="3.2000000000000002"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="notoficationBanner_dressConfirm" translatesAutoresizingMaskIntoConstraints="NO" id="Qwp-fL-mnq" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="125" width="886" height="158"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeInDown"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="3.3500000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RcF-bM-w51" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1023" y="1315"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BG_Tour" width="886" height="407"/>
@@ -1599,6 +1673,7 @@
         <image name="mask_tour" width="392" height="407"/>
         <image name="modal_watch" width="156" height="172"/>
         <image name="notoficationBanner_Receipt" width="886" height="158"/>
+        <image name="notoficationBanner_dressConfirm" width="886" height="158"/>
         <image name="ot_toolbar" width="886" height="101"/>
         <image name="p1_carPooling" width="500" height="205"/>
         <image name="p2_carPooling" width="500" height="205"/>
