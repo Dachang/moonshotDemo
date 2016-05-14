@@ -126,6 +126,13 @@
                                     <segue destination="R8g-rg-aSQ" kind="show" id="koi-bx-gOg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Pc-Z9-9Ns">
+                                <rect key="frame" x="344" y="420" width="38" height="30"/>
+                                <state key="normal" title="6830"/>
+                                <connections>
+                                    <segue destination="CFl-xK-coO" kind="show" id="rbF-3y-UeE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1490,9 +1497,73 @@
             </objects>
             <point key="canvasLocation" x="130" y="-522"/>
         </scene>
+        <!--6830-->
+        <scene sceneID="mMP-n6-chj">
+            <objects>
+                <viewController title="6830" id="CFl-xK-coO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MAH-5O-Vk5"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xbg-WO-ar5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HdQ-NS-AsR">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ot_toolbar" translatesAutoresizingMaskIntoConstraints="NO" id="Fyc-EQ-eca">
+                                <rect key="frame" x="55" y="569" width="886" height="101"/>
+                            </imageView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gBT-js-Yga">
+                                <rect key="frame" x="55" y="162" width="886" height="407"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Oriental_Tower_Ticket_Info_bg" translatesAutoresizingMaskIntoConstraints="NO" id="ve6-0g-Ali" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="886" height="407"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Oriental_Tower_Ticket_Info_Panel" translatesAutoresizingMaskIntoConstraints="NO" id="D7g-9n-oAP" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="222" width="886" height="341"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeInUp"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="3.2000000000000002"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Oriental_Tower_Ticket_Info_label" translatesAutoresizingMaskIntoConstraints="NO" id="RsG-FK-eRi" customClass="SpringImageView" customModule="MoonshotDemo" customModuleProvider="target">
+                                        <rect key="frame" x="322" y="85" width="242" height="75"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="3.2000000000000002"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1RV-Wd-XQM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1028" y="-522"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BG_Tour" width="886" height="407"/>
+        <image name="Oriental_Tower_Ticket_Info_Panel" width="886" height="341"/>
+        <image name="Oriental_Tower_Ticket_Info_bg" width="886" height="407"/>
+        <image name="Oriental_Tower_Ticket_Info_label" width="242" height="75"/>
         <image name="Template_App_ModalSheet_42mm" width="256" height="295"/>
         <image name="adbg_ad" width="886" height="407"/>
         <image name="banner1_park" width="750" height="121"/>
@@ -1528,6 +1599,7 @@
         <image name="mask_tour" width="392" height="407"/>
         <image name="modal_watch" width="156" height="172"/>
         <image name="notoficationBanner_Receipt" width="886" height="158"/>
+        <image name="ot_toolbar" width="886" height="101"/>
         <image name="p1_carPooling" width="500" height="205"/>
         <image name="p2_carPooling" width="500" height="205"/>
         <image name="pinLarge_destination" width="46" height="60"/>
